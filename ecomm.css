@@ -1,45 +1,156 @@
 * {
     box-sizing: border-box;
 }
-header{
+
+header {
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 1rem;
 }
 
-.brand{
-    width:20% ;
-}
-.menubar
-{
+.brand {
     width: 20%;
 }
-.menu{
+
+.menubar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+gap: 10px;
+}
+
+.menu {
     display: flex;
     width: 50%;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 30px;
     list-style: none;
 }
-.avator img{
+
+.avator img {
     width: 40px;
 }
-.mobile-bar{
+
+.mobile-bar {
     display: none;
 }
 
-@media (max-width:780px){
-    .mobile-bar
-    {display:flex;
+@media (max-width:780px) {
+    .mobile-bar {
+        display: flex;
     }
-    .menu{
+
+    .menu {
         display: none;
     }
+
+}
+
+.sport {
+    justify-content: center;
+     width: 70%;
+    display: flex;
+    align-items: center;
+
     
+}
+
+.tasvir2 {
+    justify-content: center;
+    max-width: 60% ;
+    display: flex;
+align-items: center;
+gap:5px
+ 
+}
+
+main{
+   max-width: 100%;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   margin-top: 3rem;
+}
+.sport img{
+    width: 70%;
+    height: 70%;
+
+}
+.tasvir2 img{
+width: 50%;
+height: 50%;
+
+}
+.tasvir{
+    display: flex;
+    align-items:center ;
+    max-width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+    
+h6{
+    text-decoration-line: line-through;
+}
+.sneaker{
+    width: 50%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.addcart{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin: 10px;
+
+}
+.addcart div span{
+    padding: 10px;
+
+}
+.addcart div:first-child{
+    background-color: grey;
+}
+.addcart div:last-child{
+    background-color: orange;
+}
+.addcart div{
+   padding: 10px; 
+   border-radius: 10px;
+}
+.percent{
+    display: flex;
+    align-items:flex-start ;
+    justify-content:left;
+    width: 50%;
+}
+.percent div:first-child{
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 10px;
+}
+.percent div:last-child{
+    padding-top: 20px;
+    justify-content: space-around;
+    margin-left: 10px;
+    background-color:orange;
+    color: orangered;
+}
+
+.btn .addcart{
+    color: white;
 }
