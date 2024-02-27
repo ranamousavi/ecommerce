@@ -19,6 +19,7 @@ header {
     align-items: center;
     justify-content: center;
 gap: 10px;
+position: relative;
 }
 
 .menu {
@@ -32,6 +33,11 @@ gap: 10px;
     justify-content: space-around;
     gap: 30px;
     list-style: none;
+}
+.menu ul li :hover{
+    cursor: pointer;
+    border-bottom: 3px solid rgb(245, 161, 6);
+    padding-bottom: 5px;
 }
 
 .avator img {
@@ -112,7 +118,7 @@ h6{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 50%;
+    width: 60%;
     margin: 10px;
 
 }
@@ -125,6 +131,7 @@ h6{
 }
 .addcart div:last-child{
     background-color: orange;
+    display: flex;
 }
 .addcart div{
    padding: 10px; 
@@ -151,6 +158,46 @@ h6{
     color: orangered;
 }
 
-.btn .addcart{
+.btnaddcart{
     color: white;
 }
+main img{
+    border-radius: 10px;
+}
+.showcart{
+    background-color: rgb(164, 164, 180);
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    left: -6rem;
+    top: 3rem;
+    display: none;
+    animation: cart 1s ease-in-out;
+}
+.menubar:hover .showcart{
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes cart{
+    0%{
+        left: -8rem;
+        top: 5rem; 
+        opacity: 0.3;
+    }
+    50%{
+        left: -7rem;
+        top: 4rem; 
+        opacity: 0.6;
+    }
+    100%{
+        left: -6rem;
+        top: 3rem; 
+        opacity: 0.8;
+    }
+    
+}
+
+
